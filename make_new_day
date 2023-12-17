@@ -1,0 +1,9 @@
+#! /bin/bash
+
+cd ~/Repositories/advent-of-code
+name="day-$1"
+cargo new $name
+mkdir $name/src/bin
+mv $name/src/main.rs $name/src/bin/part1.rs
+touch $name/src/test_data.txt $name/src/data.txt
+cd $name/src/bin
